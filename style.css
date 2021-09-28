@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav {
+    background: #273c75;
+    height: 60px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.section-conteiner {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.section-conteiner2 {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+img {
+    padding-top: 60px;
+    height: 55vh;
+    background-image: url("working_woman_illustration_-_by_tran_mau_tri_tam_2x.png")center/cover;
+}
+
+.item4 img {
+    background-image: url("conceito-de-designer-.jpg")center/cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #de7321;
+    cursor: pointer;
+}
+
+.item1 {
+    width: 55%;
+    height: 50vh;
+    padding-left: 75px;
+}
+
+.item2 {
+    padding-top: 50px;
+    padding-left: 5px;
+    width: 50%;
+    height: 45vh;
+    background-color: white;
+    padding-right: 80px;
+}
+
+.item3 {
+    padding-left: 5px;
+    width: 50%;
+    height: 45vh;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+.item4 {
+    width: 50%;
+    height: 45vh;
+    padding-left: 100px;
+}
+
+.footer-conteiner {
+    width: 100%;
+    height: 50vh;
+    background-color: #273c75;
+    color: aliceblue;
+    padding: 50px 0px 0px 20px;
+}
+
+.buttonSm {
+    background-color: #8e44ad;
+    border-radius: 15px;
+    color: aliceblue;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
+input {
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btnBuscar {
+    background: #8e44ad;
+    border: none;
+    padding: 2px;
+    border-radius: 2px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.btnBuscar:hover {
+    background: #a275b6;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 915px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 150px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #273c75;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    img {
+        padding-top: 60px;
+        height: 55vh;
+        background-image: url("working_woman_illustration_-_by_tran_mau_tri_tam_2x.png")center/cover;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 40px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #34af67;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .section-conteiner {
+        flex-direction: column;
+    }
+    .section-conteiner2 {
+        flex-direction: column-reverse;
+    }
+    .item1 {
+        width: 100%;
+        height: 55vh;
+        background-image: url("working_woman_illustration_-_by_tran_mau_tri_tam_2x.png")center/cover;
+    }
+    .item2 {
+        padding-left: 10px;
+        width: 110%;
+        height: 40vh;
+        background-color: white;
+    }
+    .footer-conteiner {
+        width: 100%;
+        height: 50vh;
+        background-color: #273c75;
+    }
+    .buttonSm {
+        background-color: #8e44ad;
+        border-radius: 15px;
+        color: aliceblue;
+        padding: 8px;
+        border: none;
+        margin-left: 175px;
+        cursor: pointer;
+    }
+    .item4 {
+        width: 55%;
+        height: 40vh;
+        padding-left: 15px;
+    }
+    img {
+        height: 55vh;
+        background-image: url("conceito-de-designer-.jpg")center/cover;
+    }
+    .item3 {
+        padding-left: 10px;
+        width: 110%;
+        height: 50vh;
+        background-color: white;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #273c75;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    img {
+        padding-top: 60px;
+        height: 55vh;
+        background-image: url("working_woman_illustration_-_by_tran_mau_tri_tam_2x.png")center/cover;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 40px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #de7321;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .section-conteiner {
+        flex-direction: column;
+    }
+    .section-conteiner2 {
+        flex-direction: column-reverse;
+    }
+    .item1 {
+        width: 100%;
+        height: 55vh;
+        background-image: url("working_woman_illustration_-_by_tran_mau_tri_tam_2x.png")center/cover;
+    }
+    .item2 {
+        padding-left: 10px;
+        width: 110%;
+        height: 40vh;
+        background-color: white;
+    }
+    .footer-conteiner {
+        width: 100%;
+        height: 50vh;
+        background-color: #273c75;
+    }
+    .buttonSm {
+        background-color: #8e44ad;
+        border-radius: 15px;
+        color: aliceblue;
+        padding: 8px;
+        border: none;
+        margin-left: 175px;
+        cursor: pointer;
+    }
+    .item4 {
+        width: 55%;
+        height: 40vh;
+        padding-left: 15px;
+    }
+    img {
+        height: 55vh;
+        background-image: url("conceito-de-designer-.jpg")center/cover;
+    }
+    .item3 {
+        padding-left: 10px;
+        width: 110%;
+        height: 50vh;
+        background-color: white;
+        padding-right: 50px;
+    }
+}
